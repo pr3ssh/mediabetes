@@ -1,0 +1,56 @@
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=153771054695550";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- Google Plus -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'es'}
+</script>
+
+<div id="logo-login"><img src="/images/mediabetes-inicio-rosa-500.png" alt="mediabetes"  /></div>
+
+<div id="redes">
+    <ul>
+    	<li>
+            <a href="https://plus.google.com/117659148951965045694?prsrc=3" target="_blank" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:24px;height:24px;"/></a> <g:plusone></g:plusone>
+		</li>
+    	<li>
+            <a href="https://twitter.com/mediabetes" class="twitter-follow-button" data-show-count="false" data-lang="es">Segui @mediabetes</a>
+            <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+		</li>
+		<li>
+            <div class="fb-like" data-href="http://www.facebook.com/mediabetes" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" style="width:100px;"></div>
+		</li>
+     </ul>
+    
+    
+</div>
+
+<div id="login_form" style="margin-top:20px;">
+	<h1>&iquest;Eres miembro? Logu&eacute;ate</h1>
+	<?php
+	
+	echo form_open('login/validate_credentials');
+	echo '<label>Usuario:</label>';
+	echo form_input('username');
+	echo '<label>Contrase&ntilde;a:</label>';
+	echo form_password('password');
+	$submit = array(
+              'name'        => 'submit',
+              'value'       => 'Entrar',
+              'class'       => 'bt-submit bt-red bt-big right',
+            );
+	echo form_submit($submit);
+	echo form_close();
+	echo '<p class="registro">'.anchor('login/signup','&iquest;No eres miembro todav&iacute;a? Reg&iacute;strate <strong>GRATIS</strong> aqu&iacute;').'</p>';
+	
+	?>
+	
+</div>
