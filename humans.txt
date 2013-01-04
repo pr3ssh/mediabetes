@@ -1,0 +1,14 @@
+/* MEDIABETES */
+/* humanstxt.org */
+
+/* TEAM */
+  Developer: Pablo Martín
+  Twitter: @edipotrebol
+
+  Developer: José Antonio Tizón
+  Twitter: @tizonsoft
+
+/* SITE */
+  TechStack: xHTML, CSS, JS (jQuery), LAMP (Linux/Apache/MySQL/PHP), CodeIgniter
+
+
